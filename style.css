@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Papyrus', fantasy
+}
+
+body {
+    background-color: lightskyblue;
+    /*background of game*/
+    color: white;
+    /*text color*/
+    display: flex;
+    /*center contend horizontally and vertically and put in columns*/
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    /*100% of the viewport height */
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /*4 column grid with equal fractions*/
+    gap: .5rem;
+}
+
+.box {
+    /*styles for each box*/
+    width: 6.25rem;
+    height: 6.25rem;
+    border: 2px solid black;
+    box-shadow: 0 0 0 1px gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 3.75rem;
+}
+
+#status {
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+button {
+    /*styles for the button*/
+    width: 9.5rem;
+    height: 2.5rem;
+    font-size: 1.25rem;
+    color: white;
+    background-color: lightslategray;
+    border: none;
+    border-radius: .25rem;
+}
+
+.win {
+    /*animation on a win toggle between colors 1s apart*/
+    animation: winAnimation ease-in-out 1s infinite;
+}
+
+@keyframes winAnimation {
+    0% {
+        background-color: darkblue;
+        /*set inital background color for animation*/
+    }
+
+    100% {
+        background-color: darkcyan;
+        /*set final background color for animation*/
+    }
+}

@@ -1,12 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
+    <title>4x4 Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <div class="container"> <!--Container for the 4x4 game grid-->
+        <div data-index="0" class="box"></div> <!--boxes within the grid-->
+        <div data-index="1" class="box"></div>
+        <div data-index="2" class="box"></div>
+        <div data-index="3" class="box"></div>
+        <div data-index="4" class="box"></div>
+        <div data-index="5" class="box"></div>
+        <div data-index="6" class="box"></div>
+        <div data-index="7" class="box"></div>
+        <div data-index="8" class="box"></div>
+        <div data-index="9" class="box"></div>
+        <div data-index="10" class="box"></div>
+        <div data-index="11" class="box"></div>
+        <div data-index="12" class="box"></div>
+        <div data-index="13" class="box"></div>
+        <div data-index="14" class="box"></div>
+        <div data-index="15" class="box"></div>
+    </div>
+    <div id="status">Let's Play</div>
+    <button id="restart">Restart</button> <!--Restart button-->
+
+    <script src="game.js"></script>
 </body>
+
 </html>
